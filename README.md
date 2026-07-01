@@ -22,7 +22,9 @@ To compile and run this game, you need a C compiler (`gcc`), `make`, and the `nc
 ```bash
 sudo apt-get update
 sudo apt-get install build-essential libncurses5-dev libncursesw5-dev
+```
 macOS (via Homebrew):
+
 
 ```bash
 brew install ncurses make
