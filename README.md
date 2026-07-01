@@ -19,7 +19,7 @@ To compile and run this game, you need a C compiler (like GCC) and the `ncurses`
 macOS:
 (ncurses is usually pre-installed, or you can get it via Homebrew)
 
-Bash
+```Bash
 brew install ncurses
 🚀 Compilation & Running
 1. Clone this repository to your local machine.
@@ -28,11 +28,11 @@ brew install ncurses
 
 3. Compile the source code using the -lncurses flag:
 
-Bash
+```Bash
 gcc main.c -o wow_game -lncurses
 Run the executable:
 
-Bash
+```Bash
 ./wow_game
 🕹️ How to Play
 1. Launch the game and select your preferred difficulty mode (1-3).
