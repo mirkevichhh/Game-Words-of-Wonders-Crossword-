@@ -23,43 +23,47 @@ To compile and run this game, you need a C compiler (`gcc`), `make`, and the `nc
 sudo apt-get update
 sudo apt-get install build-essential libncurses5-dev libncursesw5-dev
 ```
-macOS (via Homebrew):
 
-
+**macOS (via Homebrew):**
 ```bash
 brew install ncurses make
-🚀 Compilation & Running
-The project includes a Makefile configured with strict compilation flags (-Wall -Wextra -std=c11) to ensure high code quality.
+```
+
+## 🚀 Compilation & Running
+
+The project includes a `Makefile` configured with strict compilation flags (`-Wall -Wextra -std=c11`) to ensure high code quality.
 
 1. Clone this repository to your local machine.
-
 2. Open your terminal and navigate to the project directory.
-
 3. Compile the game using the provided Makefile:
-
-```bash
-make
+   ```bash
+   make
+   ```
 4. Run the executable:
+   ```bash
+   ./program
+   ```
 
-```bash
-./program
-Note: To clean up the compiled executable later, simply run make clean.
+*Note: To clean up the compiled executable later, simply run `make clean`.*
 
-🕹️ How to Play
-1. Select Difficulty: Upon launching, enter 1 (Easy), 2 (Medium), or 3 (Hard) in the main menu[cite: 1].
+## 🕹️ How to Play
 
-2. Make Words: Look at the AVAILABLE LETTERS displayed at the bottom of the screen[cite: 1]. Type a valid word using only those letters.
-(Note: Input is automatically converted to uppercase)[cite: 1].
+1. **Select Difficulty:** Upon launching, enter `1` (Easy), `2` (Medium), or `3` (Hard) in the main menu.
+2. **Make Words:** Look at the **AVAILABLE LETTERS** displayed at the bottom of the screen. Type a valid word using only those letters. 
+   *(Note: Input is automatically converted to uppercase).*
+3. **Fill the Grid:** If your word is correct, the empty brackets `| |` on the board will be filled with the highlighted green letters.
+4. **Win or Lose:** 
+   * **Win:** Guess all the hidden words before the timer hits 00:00.
+   * **Lose:** The game ends automatically if the time runs out.
+5. **Quit:** Type `EXIT` at any time to immediately close the game.
 
-3. Fill the Grid: If your word is correct, the empty brackets | | on the board will be filled with the highlighted green letters[cite: 1].
+## 📄 Documentation
 
-4. Win or Lose:
+For a detailed technical breakdown of the `ncurses` functions used, the logic behind the grid rendering, and the overall project architecture, please refer to the attached `documentation.pdf` (written in Slovak).
 
-Win: Guess all the hidden words before the timer hits 00:00[cite: 1].
+## 🔮 Future Improvements
 
-Lose: The game ends automatically if the time runs out[cite: 1].
-
-5. Quit: Type EXIT at any time to immediately close the game[cite: 1].
-
-📄 Documentation
-For a detailed technical breakdown of the ncurses functions used, the logic behind the grid rendering, and the overall project architecture, please refer to the attached documentation.pdf (written in Slovak)[cite: 1].
+Planned future updates for this project include:
+* Implementation of a Save/Load system for tracking high scores.
+* Bonus time rewards for completing words quickly.
+* Expanded graphical elements and a more complex main menu interface.
